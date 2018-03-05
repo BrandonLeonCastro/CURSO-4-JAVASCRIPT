@@ -4,8 +4,12 @@ escribir()
 })
 
 function escribir(numero){
-var pantalla = document.getElementById('display')
-pantalla.innerHTML += numero
+   var pantalla = document.getElementById('display')
+   if (pantalla.innerHTML == 0) {
+       pantalla.innerHTML = ""
+   }
+   pantalla.innerHTML += numero
+   pantalla.innerHTML = pantalla.innerHTML.substring(0, 8)
 }
 
 function reducir(rr) {
