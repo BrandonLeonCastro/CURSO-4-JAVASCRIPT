@@ -1,10 +1,6 @@
-var num1 = document.getElementById('')
-num1.addEventListener('click',function(){
-escribir()
-})
+var pantalla = document.getElementById('display')
 
 function escribir(numero){
-   var pantalla = document.getElementById('display')
    if (pantalla.innerHTML == 0) {
        pantalla.innerHTML = ""
    }
@@ -18,4 +14,8 @@ document.getElementById(rr).setAttribute("style", "transform:scale(0.95,0.95)")
 
 function engrandecer(rr) {
 document.getElementById(rr).setAttribute("style", "transform:scale(1,1)")
+}
+
+function borrar(numero){
+  pantalla.innerHTML = 0
 }
