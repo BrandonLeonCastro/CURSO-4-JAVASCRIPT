@@ -8,7 +8,7 @@
   <title>Calculadora</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body onload="init();">
   <div class="fondo">
     <div class="titulo-container">
       <h1>¡No pierdas <span>la cuenta!</span></h1>
@@ -26,7 +26,7 @@
 
       <div class="teclado">
         <img src="image/ON.png" alt="On" class="tecla" id="on" onmousedown="reducir('on')" onmouseup="engrandecer('on')" onclick="borrar('0')"/>
-        <img src="image/sign.png" alt="signo" class="tecla" id="sign" onmousedown="reducir('sign')" onmouseup="engrandecer('sign')"/>
+        <img src="image/sign.png" alt="signo" class="tecla" id="sign" onmousedown="reducir('sign')" onmouseup="engrandecer('sign')" onclick="escribir("-")"/>
         <img src="image/raiz.png" alt="raiz" class="tecla" id="raiz" onmousedown="reducir('raiz')" onmouseup="engrandecer('raiz')"/>
         <img src="image/dividido.png" alt="dividido" class="tecla divide" id="dividido" onmousedown="reducir('dividido')" onmouseup="engrandecer('dividido')"/>
 
